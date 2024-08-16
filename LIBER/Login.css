@@ -1,0 +1,97 @@
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #d6d6d6, #d7d7d9);
+  font-family: 'Arial', sans-serif;
+}
+
+
+.addUser {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.addUser h1 {
+  
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 2rem;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 1.5rem;
+  
+}
+
+.input-box input {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  transition: border-color 0.3s ease;
+  font-weight: 500;
+}
+
+.input-box input:focus {
+    
+  border-color: #2575fc;
+  outline: none;
+  
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.input-box .icon:hover {
+  color: #2575fc;
+}
+
+button[type="submit"] {
+  width: 100%;
+  /* padding: 20px; */
+  border: none;
+  border-radius: 8px;
+  background: #2575fc;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #000000;
+}
+
+.login p {
+  margin-top: 1rem;
+  color: #666;
+  font-weight: 500;
+  
+}
+
+.login a {
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.login a:hover {
+  color: #000000;
+}
