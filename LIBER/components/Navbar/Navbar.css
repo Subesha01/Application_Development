@@ -1,0 +1,131 @@
+/* Navbar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.navbar {
+    font-family: 'poppins';
+    width: 100%;
+    background-color: #272626;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 100px;
+}
+
+.navbar-content {
+    width: 100%;
+    padding: 0.1px 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -1.5%;
+}
+
+.brand-and-toggler {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-toggler-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; /* Hide button on desktop */
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.navbar-collapse ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-collapse.show-navbar-collapse {
+    max-height: 300px; /* Adjust based on number of links */
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff9900;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar-toggler-btn {
+        display: block; /* Show button on mobile */
+    }
+
+    .navbar-collapse {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .navbar-collapse ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 20px;
+    }
+}
+
+.mic-icon {
+    font-size: 24px;
+}
+
+.navbar-brand span {
+    margin-top: 10px; /* Adjust this value to move the text down */
+}
+
+.dictionary-icon {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-top: -90px;
+    padding-left: 100px;
+  }
+  
+  .dictionary-icon a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .dictionary-icon a:hover {
+    color: #ff9900;
+  }
